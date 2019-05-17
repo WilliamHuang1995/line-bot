@@ -19,7 +19,7 @@ const app = express();
 // register a webhook handler with middleware
 // about the middleware, please refer to doc
 app.post("/callback", (req, res) => {
-  res.status(200);
+  res.send({ status: 200 });
 });
 
 // event handler
